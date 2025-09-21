@@ -14,7 +14,7 @@ function render(items) {
       <div class="text" id="text-${h.id}">${h.text}</div>
       <div class="controls">
         <button class="btn" onclick="copyText(${h.id})">انسخ الحديث</button>
-        <button class="btn secondary" onclick="toggle(${h.id})">طَي / توسيع</button>
+       
       </div>
     `;
     listEl.appendChild(card);
@@ -55,3 +55,4 @@ search.addEventListener("input", (e) => {
 
 // initial render
 render(hadiths);
+
