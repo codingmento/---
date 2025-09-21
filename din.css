@@ -1,0 +1,116 @@
+:root {
+    --bg: #f9fbff;
+    --card: #0d713c;
+    --accent: #0bfd88;
+    --text: #111;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial;
+    margin: 0;
+    background: seagreen;
+    color: white;
+    direction: rtl;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px
+}
+
+.header {
+    padding: 28px 0;
+    text-align: center
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem
+}
+
+.subtitle {
+    margin: 8px 0 16px;
+    color: #282828
+}
+
+#search {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #228a75;
+    font-size: 1rem
+}
+
+.list {
+    margin-top: 18px;
+    display: grid;
+    gap: 12px
+}
+
+.card {
+    background: var(--card);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(11, 129, 129, 0.06)
+}
+
+.card h2 {
+    margin: 0 0 8px;
+    font-size: 1.05rem
+}
+
+.card .meta {
+    color: #212121;
+    font-size: 0.9rem;
+    margin-bottom: 8px
+}
+
+.card .text {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin-bottom: 8px
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start
+}
+
+.btn {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: var(--accent);
+    color: rgb(13, 82, 70);
+    font-weight: 600
+}
+
+.btn.secondary {
+    background: #14945d;
+    color: #181717
+}
+
+.footer {
+    padding: 18px 0;
+    text-align: center;
+    color: #242323
+}
+
+@media (max-width:600px) {
+    .header h1 {
+        font-size: 1.4rem
+    }
+}
